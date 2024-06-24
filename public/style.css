@@ -51,7 +51,7 @@ align-items: center;
 .content {
   height: 120px;
   width: 560px;
-  background-image: url('images/bitcloud_dark.svg');
+  background-image: url("/images/bitcloud_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   opacity: 1;
