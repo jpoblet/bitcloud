@@ -10,8 +10,9 @@
 }
 
 html {
-    background: var(--shark);
-    color: var(--lime);
+  /* background: purple; */
+  background: var(--shark);
+  color: var(--lime);
 }
 
 body {
@@ -22,30 +23,29 @@ body {
 }
 
 h4 {
-    font-size: 20px;
-    margin: 0;
+  font-size: 20px;
+  margin: 0;
 }
 
 p {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 400;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-/* COLOUR PALETTE */
 .wrapper {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .wrapperContent {
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -58,13 +58,13 @@ align-items: center;
 }
 
 .contentMobile {
-  height: 100%;
-  width: 100%;
+  height: 320px;
+  width: 480px;
   background-image: url("/images/bitcloud_vertical_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
-  margin: 24%;
+  margin: 0 24%;
   display: none;
 }
 
@@ -78,7 +78,7 @@ align-items: center;
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 450px) {
   .content {
     display: none;
   }
