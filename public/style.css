@@ -22,13 +22,13 @@ body {
 }
 
 h4 {
-    size: 16px;
+    font-size: 20px;
     margin: 0;
 }
 
 p {
     margin: 0;
-    size: 16px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -54,7 +54,18 @@ align-items: center;
   background-image: url("/images/bitcloud_dark.svg");
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 1;
+  display: block;
+}
+
+.contentMobile {
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/bitcloud_vertical_dark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  margin: 24%;
+  display: none;
 }
 
 .footer {
@@ -64,4 +75,28 @@ align-items: center;
   padding: 32px 40px;
   justify-content: space-between;
   width: 100%;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .content {
+    display: none;
+  }
+  
+  .contentMobile {
+    display: block;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
